@@ -1,7 +1,7 @@
 import { Tabs } from 'expo-router';
 import Ionicons from '@expo/vector-icons/Ionicons';
-import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
-import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
+import Entypo from '@expo/vector-icons/Entypo';
+
 
 export default function TabLayout() {
   return (
@@ -23,21 +23,21 @@ export default function TabLayout() {
             <Ionicons name={focused ? 'home-sharp' : 'home-outline'} color={color} size={24} />
         ),
        }} />
-      <Tabs.Screen name="D&D" options={{ title: 'D&D',
+      <Tabs.Screen name="CharacterCreator" options={{ title: 'Charcter Creator',
         tabBarIcon: ({color, focused})=>(
-            <FontAwesome5 name={'dragon'} color={color} size={24} />
+            <Ionicons name={'person-add'} color={color} size={24} />
         ),
        }} />
-      <Tabs.Screen name="CyberPunk" options={{ title: 'CyperPunk',
+      <Tabs.Screen name="CharacterLoader" options={{ title: 'Character Loader',
         tabBarIcon: ({color, focused})=>(
-            <FontAwesome5 name={'usb'} color={color} size={24} />
+            <Ionicons name={'person'} color={color} size={24} />
         ),
        }} />
-      <Tabs.Screen name="PathFinder" options={{ title: 'PathFinder',
+      <Tabs.Screen name="GMtools" options={{ title: 'GM tools',
         tabBarIcon: ({color, focused})=>(
-            <MaterialCommunityIcons name={'sword'} color={color} size={24} />
+            <Entypo name={'tools'} color={color} size={24} />
         ),
-       }} />
+       }} /> 
     </Tabs>
   );
 }

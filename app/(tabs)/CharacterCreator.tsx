@@ -1,10 +1,9 @@
 import { Text, View, StyleSheet } from 'react-native';
-import { Link } from "expo-router"; 
-export default function CyperPunkScreen() {
+
+export default function CharacterCreatorScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>CyberPunk Page</Text>
-
+      <Text style={styles.text}>Character Creater Page</Text>
     </View>
   );
 }

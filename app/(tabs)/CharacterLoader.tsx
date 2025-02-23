@@ -1,9 +1,10 @@
 import { Text, View, StyleSheet } from 'react-native';
-
-export default function AboutScreen() {
+import { Link } from "expo-router"; 
+export default function CharacterLoaderScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>PathFinder Page</Text>
+      <Text style={styles.text}>Character Loader Page</Text>
+
     </View>
   );
 }
