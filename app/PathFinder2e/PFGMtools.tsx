@@ -1,9 +1,9 @@
 import { Text, View, StyleSheet } from 'react-native';
 
-export default function CharacterCreatorScreen() {
+export default function GMtoolsScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Character Creater Page</Text>
+      <Text style={styles.text}>Game Master Tools</Text>
     </View>
   );
 }

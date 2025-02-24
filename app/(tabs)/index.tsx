@@ -6,16 +6,17 @@ export default function Index() {
     <View style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.title}>Weclome to Table Top Beyond</Text>
+        <Text style={styles.text}>Pick a system!</Text>
       </View>  
 
-      <Link href="/CharacterCreator" style={styles.button}>
-        Create Character 
+      <Link href="/D&D/DungeonDragons" style={styles.button}>
+        Dungeons and Dragons 5e
       </Link>
-      <Link href="/CharacterLoader" style={styles.button}>
-        Load Character
+      <Link href="/CyberPunkRed/CyberPunk" style={styles.button}>
+        CyberPunk Red
       </Link>
-      <Link href="/GMtools" style={styles.button}>
-        Game Master Tools
+      <Link href="/PathFinder2e/PathFinder" style={styles.button}>
+        PathFinder 2e
       </Link>
     </View>
   );
@@ -40,6 +41,7 @@ const styles = StyleSheet.create({
   },
   text: {
     color: '#fff',
+    fontSize: 20
   },
   button: {
     fontSize: 20,

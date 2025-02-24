@@ -23,21 +23,7 @@ export default function TabLayout() {
             <Ionicons name={focused ? 'home-sharp' : 'home-outline'} color={color} size={24} />
         ),
        }} />
-      <Tabs.Screen name="CharacterCreator" options={{ title: 'Charcter Creator',
-        tabBarIcon: ({color, focused})=>(
-            <Ionicons name={'person-add'} color={color} size={24} />
-        ),
-       }} />
-      <Tabs.Screen name="CharacterLoader" options={{ title: 'Character Loader',
-        tabBarIcon: ({color, focused})=>(
-            <Ionicons name={'person'} color={color} size={24} />
-        ),
-       }} />
-      <Tabs.Screen name="GMtools" options={{ title: 'GM tools',
-        tabBarIcon: ({color, focused})=>(
-            <Entypo name={'tools'} color={color} size={24} />
-        ),
-       }} /> 
+
     </Tabs>
   );
 }
